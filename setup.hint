@@ -1,4 +1,4 @@
 category: Gnome
-requires: cygwin GConf2 gtk2-x11 libgnome2 libgnomeui2
+requires: cygwin GConf2 glib2 gtk2-x11 libgnome2 libgnomeui2 libintl8
 sdesc: "GUI editor for the GConf configuration system"
 ldesc: "GUI editor for the GConf configuration system"
