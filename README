@@ -3,30 +3,29 @@ gconf-editor
 GUI editor for the GConf configuration system
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.16.3-1
-  gtk2-x11-2.12.9-1
-  libgnome2-2.22.0-1
-  libgnomeui2-2.22.1-1
-  libintl8-0.15-1
-  pango-1.20.3-1
+  cygwin-1.5.25-15
+  libgconf2_4-2.24.0-1
+  libglib2.0_0-2.18.3-1
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
+  libgtk2.0_0-2.14.5-1
+  libintl8-0.17-2
+  libpango1.0_0-1.22.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.11-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gettext-devel-0.15-1
-  gnome-common-2.20.0-2
-  intltool-0.37.1-1
+  gettext-devel-0.17-2
+  gnome-common-2.24.0-1
+  intltool-0.40.5-1
   make-3.81-1
-  pkg-config-0.21-1
-  rarian-0.8.0-1
+  pkg-config-0.23a-2
+  rarian-0.8.1-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -38,15 +37,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gconf-editor-2.22.0-1-src.tar.bz2
+  unpack gconf-editor-2.24.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gconf-editor-2.22.0-1.cygport all
+  cygport ./gconf-editor-2.24.1-1.cygport all
 
 This will create:
-  /usr/src/gconf-editor-2.22.0-1-src.tar.bz2
-  /usr/src/gconf-editor-2.22.0-1.tar.bz2
+  /usr/src/gconf-editor-2.24.1-1-src.tar.bz2
+  /usr/src/gconf-editor-2.24.1-1.tar.bz2
 
 -------------------------------------------
 
@@ -57,16 +56,25 @@ Files included in the binary package:
   /etc/preremove/gconf-editor.sh
   /usr/bin/gconf-editor.exe
   /usr/share/applications/gconf-editor.desktop
-  /usr/share/doc/gconf-editor-2.22.0/AUTHORS
-  /usr/share/doc/gconf-editor-2.22.0/COPYING
-  /usr/share/doc/gconf-editor-2.22.0/ChangeLog
-  /usr/share/doc/gconf-editor-2.22.0/INSTALL
-  /usr/share/doc/gconf-editor-2.22.0/MAINTAINERS
-  /usr/share/doc/gconf-editor-2.22.0/NEWS
-  /usr/share/doc/gconf-editor-2.22.0/README
+  /usr/share/doc/gconf-editor-2.24.1/AUTHORS
+  /usr/share/doc/gconf-editor-2.24.1/COPYING
+  /usr/share/doc/gconf-editor-2.24.1/ChangeLog
+  /usr/share/doc/gconf-editor-2.24.1/MAINTAINERS
+  /usr/share/doc/gconf-editor-2.24.1/NEWS
+  /usr/share/doc/gconf-editor-2.24.1/README
+  /usr/share/gconf-editor/icons/hicolor/16x16/status/type-boolean.png
+  /usr/share/gconf-editor/icons/hicolor/16x16/status/type-float.png
+  /usr/share/gconf-editor/icons/hicolor/16x16/status/type-integer.png
+  /usr/share/gconf-editor/icons/hicolor/16x16/status/type-list.png
+  /usr/share/gconf-editor/icons/hicolor/16x16/status/type-pair.png
+  /usr/share/gconf-editor/icons/hicolor/16x16/status/type-schema.png
+  /usr/share/gconf-editor/icons/hicolor/16x16/status/type-string.png
+  /usr/share/gconf-editor/icons/hicolor/16x16/status/type-undefined.png
   /usr/share/gnome/help/gconf-editor/C/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/C/gconf-editor.xml
   /usr/share/gnome/help/gconf-editor/C/legal.xml
+  /usr/share/gnome/help/gconf-editor/ca/figures/gconf_editor_anno_window.png
+  /usr/share/gnome/help/gconf-editor/ca/gconf-editor.xml
   /usr/share/gnome/help/gconf-editor/de/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/de/gconf-editor.xml
   /usr/share/gnome/help/gconf-editor/es/figures/gconf_editor_anno_window.png
@@ -77,8 +85,14 @@ Files included in the binary package:
   /usr/share/gnome/help/gconf-editor/it/gconf-editor.xml
   /usr/share/gnome/help/gconf-editor/oc/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/oc/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/pt_BR/figures/gconf_editor_anno_window.png
+  /usr/share/gnome/help/gconf-editor/pt_BR/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/ru/figures/gconf_editor_anno_window.png
+  /usr/share/gnome/help/gconf-editor/ru/gconf-editor.xml
   /usr/share/gnome/help/gconf-editor/sv/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/sv/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/th/figures/gconf_editor_anno_window.png
+  /usr/share/gnome/help/gconf-editor/th/gconf-editor.xml
   /usr/share/gnome/help/gconf-editor/uk/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/uk/gconf-editor.xml
   /usr/share/icons/hicolor/48x48/apps/gconf-editor.png
@@ -149,7 +163,7 @@ Files included in the binary package:
   /usr/share/locale/sl/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/sq/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/sr/LC_MESSAGES/gconf-editor.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/gconf-editor.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/sv/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/ta/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/te/LC_MESSAGES/gconf-editor.mo
@@ -164,25 +178,24 @@ Files included in the binary package:
   /usr/share/locale/zh_TW/LC_MESSAGES/gconf-editor.mo
   /usr/share/man/man1/gconf-editor.1.gz
   /usr/share/omf/gconf-editor/gconf-editor-C.omf
+  /usr/share/omf/gconf-editor/gconf-editor-ca.omf
   /usr/share/omf/gconf-editor/gconf-editor-de.omf
   /usr/share/omf/gconf-editor/gconf-editor-es.omf
   /usr/share/omf/gconf-editor/gconf-editor-fr.omf
   /usr/share/omf/gconf-editor/gconf-editor-it.omf
   /usr/share/omf/gconf-editor/gconf-editor-oc.omf
+  /usr/share/omf/gconf-editor/gconf-editor-pt_BR.omf
+  /usr/share/omf/gconf-editor/gconf-editor-ru.omf
   /usr/share/omf/gconf-editor/gconf-editor-sv.omf
+  /usr/share/omf/gconf-editor/gconf-editor-th.omf
   /usr/share/omf/gconf-editor/gconf-editor-uk.omf
-  /usr/share/pixmaps/gconf-editor/entry-blank.png
-  /usr/share/pixmaps/gconf-editor/entry-bool.png
-  /usr/share/pixmaps/gconf-editor/entry-list.png
-  /usr/share/pixmaps/gconf-editor/entry-number.png
-  /usr/share/pixmaps/gconf-editor/entry-schema.png
-  /usr/share/pixmaps/gconf-editor/entry-string.png
-  /usr/share/pixmaps/gconf-editor/folder-closed.png
-  /usr/share/pixmaps/gconf-editor/folder-open.png
 
 --------------------
 
 Port Notes:
+
+----- version 2.24.1-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.0-1 -----
 Version bump for GNOME 2.22.
