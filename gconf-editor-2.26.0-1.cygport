@@ -1,3 +1,5 @@
 inherit gnome2
 
 DESCRIPTION="GNOME GConf preferences editor"
+
+PATCH_URI="2.26-no-polkit.patch"

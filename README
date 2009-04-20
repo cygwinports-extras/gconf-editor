@@ -3,29 +3,28 @@ gconf-editor
 GUI editor for the GConf configuration system
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libgconf2_4-2.24.0-1
-  libglib2.0_0-2.18.3-1
-  libgnome2_0-2.24.1-1
-  libgnomeui2_0-2.24.0-1
-  libgtk2.0_0-2.14.5-1
-  libintl8-0.17-2
-  libpango1.0_0-1.22.3-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libpango1.0_0-1.24.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gettext-devel-0.17-2
-  gnome-common-2.24.0-1
-  intltool-0.40.5-1
-  make-3.81-1
-  pkg-config-0.23a-2
-  rarian-0.8.1-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gettext-devel-0.17-10
+  gnome-common-2.26.0-1
+  intltool-0.40.6-1
+  make-3.81-2
+  pkg-config-0.23b-10
+  rarian-0.8.1-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -37,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gconf-editor-2.24.1-1-src.tar.bz2
+  unpack gconf-editor-2.26.0-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gconf-editor-2.24.1-1.cygport all
+  cygport ./gconf-editor-2.26.0-1.cygport all
 
 This will create:
-  /usr/src/gconf-editor-2.24.1-1-src.tar.bz2
-  /usr/src/gconf-editor-2.24.1-1.tar.bz2
+  /usr/src/gconf-editor-2.26.0-1-src.tar.bz2
+  /usr/src/gconf-editor-2.26.0-1.tar.bz2
 
 -------------------------------------------
 
@@ -56,12 +55,12 @@ Files included in the binary package:
   /etc/preremove/gconf-editor.sh
   /usr/bin/gconf-editor.exe
   /usr/share/applications/gconf-editor.desktop
-  /usr/share/doc/gconf-editor-2.24.1/AUTHORS
-  /usr/share/doc/gconf-editor-2.24.1/COPYING
-  /usr/share/doc/gconf-editor-2.24.1/ChangeLog
-  /usr/share/doc/gconf-editor-2.24.1/MAINTAINERS
-  /usr/share/doc/gconf-editor-2.24.1/NEWS
-  /usr/share/doc/gconf-editor-2.24.1/README
+  /usr/share/doc/gconf-editor/AUTHORS
+  /usr/share/doc/gconf-editor/COPYING
+  /usr/share/doc/gconf-editor/ChangeLog
+  /usr/share/doc/gconf-editor/MAINTAINERS
+  /usr/share/doc/gconf-editor/NEWS
+  /usr/share/doc/gconf-editor/README
   /usr/share/gconf-editor/icons/hicolor/16x16/status/type-boolean.png
   /usr/share/gconf-editor/icons/hicolor/16x16/status/type-float.png
   /usr/share/gconf-editor/icons/hicolor/16x16/status/type-integer.png
@@ -70,35 +69,124 @@ Files included in the binary package:
   /usr/share/gconf-editor/icons/hicolor/16x16/status/type-schema.png
   /usr/share/gconf-editor/icons/hicolor/16x16/status/type-string.png
   /usr/share/gconf-editor/icons/hicolor/16x16/status/type-undefined.png
+  /usr/share/gnome/help/gconf-editor/C/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/C/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/C/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/C/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/C/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/C/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/C/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/C/gconf-editor.xml
   /usr/share/gnome/help/gconf-editor/C/legal.xml
+  /usr/share/gnome/help/gconf-editor/ca/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/ca/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/ca/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/ca/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/ca/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/ca/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/ca/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/ca/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/de/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/de/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/de/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/de/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/de/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/de/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/de/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/de/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/el/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/el/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/el/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/el/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/el/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/el/figures/entry-string.png
+  /usr/share/gnome/help/gconf-editor/el/figures/gconf_editor_anno_window.png
+  /usr/share/gnome/help/gconf-editor/el/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/en_GB/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/en_GB/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/en_GB/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/en_GB/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/en_GB/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/en_GB/figures/entry-string.png
+  /usr/share/gnome/help/gconf-editor/en_GB/figures/gconf_editor_anno_window.png
+  /usr/share/gnome/help/gconf-editor/en_GB/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/es/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/es/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/es/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/es/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/es/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/es/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/es/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/es/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/fr/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/fr/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/fr/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/fr/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/fr/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/fr/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/fr/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/fr/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/it/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/it/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/it/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/it/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/it/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/it/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/it/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/it/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/oc/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/oc/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/oc/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/oc/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/oc/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/oc/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/oc/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/oc/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/pt_BR/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/pt_BR/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/pt_BR/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/pt_BR/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/pt_BR/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/pt_BR/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/pt_BR/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/pt_BR/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/ru/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/ru/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/ru/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/ru/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/ru/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/ru/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/ru/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/ru/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/sv/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/sv/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/sv/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/sv/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/sv/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/sv/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/sv/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/sv/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/th/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/th/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/th/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/th/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/th/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/th/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/th/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/th/gconf-editor.xml
+  /usr/share/gnome/help/gconf-editor/uk/figures/entry-blank.png
+  /usr/share/gnome/help/gconf-editor/uk/figures/entry-bool.png
+  /usr/share/gnome/help/gconf-editor/uk/figures/entry-list.png
+  /usr/share/gnome/help/gconf-editor/uk/figures/entry-number.png
+  /usr/share/gnome/help/gconf-editor/uk/figures/entry-schema.png
+  /usr/share/gnome/help/gconf-editor/uk/figures/entry-string.png
   /usr/share/gnome/help/gconf-editor/uk/figures/gconf_editor_anno_window.png
   /usr/share/gnome/help/gconf-editor/uk/gconf-editor.xml
   /usr/share/icons/hicolor/48x48/apps/gconf-editor.png
   /usr/share/locale/am/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/ar/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/as/LC_MESSAGES/gconf-editor.mo
+  /usr/share/locale/ast/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/az/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/be/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/be@latin/LC_MESSAGES/gconf-editor.mo
@@ -153,6 +241,7 @@ Files included in the binary package:
   /usr/share/locale/or/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/pa/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/pl/LC_MESSAGES/gconf-editor.mo
+  /usr/share/locale/ps/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/pt/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gconf-editor.mo
   /usr/share/locale/ro/LC_MESSAGES/gconf-editor.mo
@@ -180,6 +269,8 @@ Files included in the binary package:
   /usr/share/omf/gconf-editor/gconf-editor-C.omf
   /usr/share/omf/gconf-editor/gconf-editor-ca.omf
   /usr/share/omf/gconf-editor/gconf-editor-de.omf
+  /usr/share/omf/gconf-editor/gconf-editor-el.omf
+  /usr/share/omf/gconf-editor/gconf-editor-en_GB.omf
   /usr/share/omf/gconf-editor/gconf-editor-es.omf
   /usr/share/omf/gconf-editor/gconf-editor-fr.omf
   /usr/share/omf/gconf-editor/gconf-editor-it.omf
@@ -194,35 +285,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.24.1-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.0-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.0-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.2-1 -----
-Version bump.
-
------ version 2.18.0-1 -----
-Version bump for GNOME 2.18.
-
------ version 2.16.0-1 -----
-Version bump for GNOME 2.16.
-
------ version 2.14.0-1 -----
-Version bump for GNOME 2.14.
-
------ version 2.12.1-1 -----
-Version bump for GNOME 2.12.
-
------ version 2.10.0-1 -----
-Version bump for GNOME 2.10.
-
------ version 2.8.2-1 -----
-Initial release for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
