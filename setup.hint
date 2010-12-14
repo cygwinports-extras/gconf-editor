@@ -1,4 +1,4 @@
 category: Gnome
-requires: GConf2 libdbus-glib_1_2 libgcc1 libgconf2_4 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0
+requires: GConf2 libdbus-glib_1_2 libgconf2_4 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0
 sdesc: "GUI editor for the GConf configuration system"
 ldesc: "GUI editor for the GConf configuration system"
