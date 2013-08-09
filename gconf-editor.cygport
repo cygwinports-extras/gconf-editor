@@ -1,0 +1,10 @@
+inherit gnome2
+
+NAME="gconf-editor"
+VERSION=3.0.1
+RELEASE=2
+CATEGORY="GNOME"
+SUMMARY="GUI editor for the GConf configuration system"
+DESCRIPTION="GUI editor for the GConf configuration system"
+
+PATCH_URI="http://bugzilla-attachments.gnome.org/attachment.cgi?id=211810"

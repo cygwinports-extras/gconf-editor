@@ -1,4 +1,0 @@
-category: Gnome
-requires: GConf2 libgconf2_4 libglib2.0_0 libgtk3_0 libintl8 libpango1.0_0
-sdesc: "GUI editor for the GConf configuration system"
-ldesc: "GUI editor for the GConf configuration system"
